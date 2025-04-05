@@ -14,10 +14,10 @@ A fully virtualized IT infrastructure project simulating a real-world business n
 - **VirtualBox / Proxmox**: VM orchestration and networking
 
 ## Infrastructure Diagram
-![Network Diagram](images/network_diagram.png)
+![Network Diagram](documentation/diagrams/network_diagram.png)
 
 ## Monitoring Dashboard
-![Monitoring Screenshot](images/monitoring_dashboard.png)
+![Monitoring Screenshot](documentation/diagrams/monitoring_dashboard.png)
 
 ## Highlights
 - Configured internal DNS/DHCP via Windows Server
