@@ -29,10 +29,10 @@ This project simulates a small enterprise network, including:
 ## 📁 Project Components
 
 - [Project Report](documentation/project-report.pdf)
-- [IP Schema](documentation/IP-Schema.md)
+- [IP Schema](documentation/Ip-Schema.md)
 - [Scope](configs/windows/dhcp_scope.txt)
 - [Active Directory Setup](configs/windows/ad_user.txt)
-- [pfSense Config](configs/pfSense/interface_configs.txt)
+- [pfSense Config](configs/pfSense/interfaces_configs.txt)
 - [Netdata Monitoring Setup](configs/netdata/dashboard.txt)
 
 ## 🔒 Security Highlights
