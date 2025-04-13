@@ -28,7 +28,7 @@ This project simulates a small enterprise network, including:
 
 ## 📁 Project Components
 
-- [Project Report](documentation/project-report.pdf)
+- [Project Report](documentation/project-report1.pdf)
 - [IP Schema](documentation/Ip-Schema.md)
 - [Scope](configs/windows/dhcp_scope.txt)
 - [Active Directory Setup](configs/windows/ad_user.txt)
