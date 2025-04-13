@@ -1,0 +1,27 @@
+# Netdata Dashboards – Overview
+
+## Host: LinuxClient (192.168.1.50)
+- Domain-joined Linux machine with Netdata installed
+- Access Netdata UI: `http://192.168.1.50:19999` (LAN only)
+
+## Monitored Metrics
+
+### 🔧 System Performance
+- CPU usage (core-level)
+- RAM usage (used, available, cache)
+- Disk I/O (read/write per device)
+- Load average and uptime
+
+### 🌐 Network
+- Bandwidth usage per interface (eth0 → LAN)
+- Errors and dropped packets
+- Connection tracking
+
+### 💡 Services
+- Samba service status
+- SSH daemon (uptime and restarts)
+- Nginx (optional, if running on UbuntuWeb)
+
+### 🛡️ Health & Alerts
+- System health alerts (CPU spikes, disk saturation)
+- Notifications visible directly on dashboard

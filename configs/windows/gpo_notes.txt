@@ -1,0 +1,17 @@
+# Group Policy Notes
+    
+## Applied GPOs:
+    
+1. **Default Domain Policy**
+    - Enforce password complexity
+    - Minimum password length: 8
+    - Account lockout after 5 failed attempts
+  
+2. **Linux Client Integration**
+    - NTP Server configured via GPO
+    - Login banners enabled
+    - Firewall rule exceptions for Samba and SSH
+   
+3. **Restricted User Settings** (linked to Employees OU)
+    - Disable access to Control Panel
+    - Redirect Documents folder to network share

@@ -1,0 +1,22 @@
+# Active Directory Users Created
+	Domain: evilbank.local
+    
+1. Username: admin01
+	Full Name: Lab Admin
+	OU: Administrators
+	Groups: Domain Admins, Enterprise Admins
+  
+2. Username: user01
+	Full Name: Nicholas Blaine
+	OU: IT Department
+	Groups: Domain Users
+    
+3. Username: user02
+	Full Name: Valerie Edwards
+	OU: Human Resources
+	Groups: Domain Users
+
+4. Username: user03
+	Full Name: Alex Feinman
+	OU: Accounting
+	Groups: Domain Users

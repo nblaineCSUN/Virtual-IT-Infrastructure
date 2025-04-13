@@ -1,0 +1,12 @@
+| Device              | Purpose                           | IP Address                    | Subnet Mask   | Default Gateway | DNS Server  | Notes                                       | Network Adapter          |
+|---------------------|-----------------------------------|-------------------------------|---------------|-----------------|-------------|---------------------------------------------|--------------------------|
+| pf01                | LAN Interface                     | 192.168.1.1, 192.168.2.1      | 255.255.255.0 | ----------      | ----------  | Default gateway for all VMs, DHCP, DMZ, DNS | NAT/Internal/InternalDMZ |
+| WindowsDC01         | Domain Controller/DNS/DHCP/FS     | 192.168.1.10                  | 255.255.255.0 | 192.168.1.1     | 127.0.0.1   | Active Directory and File Service           | Internal/Bridged         |
+| LinuxClient/Netdata | AD-joined linux client/Monitoring | 192.168.1.50                  | 255.255.255.0 | 192.168.1.1     | 192.168.1.1 | Used for login, testing GPO/Monitoring      | Internal                 |
+| other               | Optional DHCP for test clients    | 192.168.1.100+                | 255.255.255.0 | 192.168.1.1     | 192.168.1.1 | If DHCP is enabled                          | Internal                 |
+| UbuntuWeb           | Nginx Web Server/Monitoring       | 192.168.2.30                  | 255.255.255.0 | 192.168.2.1     | 192.168.1.1 | DMZ Hosted Web App                          | Internal                 |
+|                     |                                   |                               |               |                 |             |                                             |                          |
+| VLAN                | Subnet                            | Notes                         |               |                 |             |                                             |                          |
+| WAN                 | 10.0.2.15/24                      | pfSense to Internet           |               |                 |             |                                             |                          |
+| LAN                 | 192.168.1.1/24                    | Internal Network LAN (intnet) |               |                 |             |                                             |                          |
+| DMZ                 | 192.168.2.0/24                    | UbuntuWeb - WAN/LAN Buffer    |               |                 |             |                                             |                          |

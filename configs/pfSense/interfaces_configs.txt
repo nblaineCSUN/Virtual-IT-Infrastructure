@@ -1,0 +1,18 @@
+pfSense Interface Configuration
+
+1. WAN Interface
+   - Interface Name: WAN
+   - IP Assignment: DHCP
+   - Description: WAN (connected to NAT adapter)
+
+2. LAN Interface
+   - Interface Name: LAN
+   - IP Address: 192.168.1.1
+   - Subnet Mask: /24 (255.255.255.0)
+   - Description: LAN (Internal network)
+
+3. DMZ Interface
+   - Interface Name: OPT1 (DMZ)
+   - IP Address: 192.168.2.1
+   - Subnet Mask: /24 (255.255.255.0)
+   - Description: DMZ (Internal DMZ network)

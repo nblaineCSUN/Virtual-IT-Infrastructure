@@ -1,0 +1,37 @@
+# pfSense Firewall Rules – LAN, DMZ, and WAN
+
+# LAN → Any (Allow full access)
+Rule 1:
+  Interface: LAN
+  Protocol: Any
+  Source: LAN net
+  Destination: Any
+  Action: Pass
+  Description: Allow all LAN traffic
+
+# DMZ → WAN (Allow HTTP/HTTPS)
+Rule 2:
+  Interface: DMZ
+  Protocol: TCP
+  Source: DMZ net
+  Destination: Any
+  Port: 80, 443
+  Action: Pass
+  Description: Allow web access from DMZ
+
+# DMZ → LAN (BLOCK)
+Rule 3:
+  Interface: DMZ
+  Protocol: Any
+  Source: DMZ net
+  Destination: LAN net
+  Action: Block
+  Description: Prevent DMZ from accessing LAN
+
+# WAN → DMZ (Port Forward)
+Rule 4:
+  NAT Port Forward (not a rule, but related)
+  External Port: 80
+  Internal IP: 192.168.2.30
+  Internal Port: 80
+  Description: Forward web traffic to UbuntuWeb

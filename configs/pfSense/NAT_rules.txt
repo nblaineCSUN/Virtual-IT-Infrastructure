@@ -1,0 +1,5 @@
+# NAT Port Forward Rules (pfSense)
+- External Port: 80 (HTTP)
+- Internal IP: 192.168.2.30
+- Internal Port: 80
+- Description: Forward HTTP to UbuntuWeb

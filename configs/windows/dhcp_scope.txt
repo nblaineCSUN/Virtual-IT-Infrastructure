@@ -1,0 +1,17 @@
+# Windows DHCP Scope Configuration
+
+Scope Name: Lab-LAN
+Subnet: 192.168.1.0/24
+Start IP: 192.168.1.100
+End IP: 192.168.1.200
+Lease Duration: 8 Days
+
+Router (Default Gateway): 192.168.1.1
+DNS Server: 192.168.1.10
+WINS: Not configured
+
+Exclusions:
+- 192.168.1.1 (pfSense)
+- 192.168.1.10 (WindowsDC01)
+- 192.168.1.30 (UbuntuWeb)
+- 192.168.1.50 (LinuxClient/Netdata)
