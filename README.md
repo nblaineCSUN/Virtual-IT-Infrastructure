@@ -14,7 +14,7 @@ This project simulates a small enterprise network, including:
 ## 🛠️ Tools & Technologies
 
 - VirtualBox
-- Windows Server 2022 (AD, DNS, DHCP, File Server)
+- Windows Server 2022 (AD, DHCP, File Server)
 - pfSense (DMZ, NAT, Logical Segmentation, Firewall, DNS, DHCP)
 - Ubuntu (Nginx)
 - Linux Client (Netdata, Samba)
