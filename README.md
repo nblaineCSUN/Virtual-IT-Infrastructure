@@ -1,6 +1,8 @@
 # Virtual IT Infrastructure Lab
 
 A fully virtualized enterprise-like IT lab built using VirtualBox, pfSense, Windows Server 2022, and Linux systems.
+Designed and deployed a multi-tier virtual IT infrastructure with Active Directory, DNS, DHCP, and pfSense firewall in VirtualBox.
+- [Project Report](documentation/project-report1.pdf)
 
 ## 🧱 Project Overview
 
@@ -28,7 +30,6 @@ This project simulates a small enterprise network, including:
 
 ## 📁 Project Components
 
-- [Project Report](documentation/project-report1.pdf)
 - [IP Schema](documentation/Ip-Schema.md)
 - [Scope](configs/windows/dhcp_scope.txt)
 - [Active Directory Setup](configs/windows/ad_user.txt)
